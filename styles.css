@@ -1,0 +1,46 @@
+
+
+.header{
+    position: relative;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    background-color: #175c99;
+    
+}
+
+.header img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.header h1{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+}
+
+.header span{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+.grid{
+    width: 100%;
+    height:85vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e5e5e5;
+}
+
+.input-box{
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
