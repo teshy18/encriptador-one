@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/6063ab48b7.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -22,22 +25,33 @@
     <div class="grid">
         
         <div class="input-box">
+            <h2>Ingrese el texto a encriptar:</h2>
             <form action="">
-                <input type="text">
-                <p>Solo letras mínusculas y sin acentos</p>    
-                <button> Encriptar </button>
-                <button> Desencriptar </button>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Ingrese el texto que desea encriptar aquí."></textarea>
+                
+                <p> <i class="fa-solid fa-circle-exclamation fa-lg fa-shake"></i> Solo letras mínusculas y sin acentos</p>    
+               
+                <button class="btn" id="encriptar"> Encriptar </button>
+                <button class="btn" id="desencriptar"> Desencriptar </button>
             </form>
         </div>
 
         <div class="msg-box">
-            <p>no se encontro ningun mensaje</p>
+            <h2>Mensaje encriptado:</h2>
+            <div class="msg">
+                <p id="msg">Aún no ha ingresado un mensaje para encriptar.</p>
+            </div>
+            <p> <i class="fa-regular fa-copy  fa-beat" style="--fa-animation-duration: 1.5s;"></i> Haz click aqui para copiar el mensaje.</p>
+            <button class="btn" id="copiar"> Copiar </button>
         </div>
 
+      
     </div>
     
+    <footer class="footer">
+        <p>Sebastian Abel Tesitore</p>
+    </footer>
 
-
-
+    <script src="script.js"></script>
 </body>
 </html>
