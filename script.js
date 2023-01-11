@@ -38,12 +38,12 @@ function copiarTexto(){
     
     navigator.clipboard.writeText(mensajeSalida.textContent)
 
-    alert('se copio el mensaje')
     Swal.fire({
         title: 'Copiado!',
         text: 'Se copio el mensaje con exito',
         icon: 'success',
-        timer: '1000',        
+        timer: '1500',    
+        showConfirmButton: false,
       })
 }
 

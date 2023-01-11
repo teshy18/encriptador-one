@@ -104,4 +104,19 @@
     bottom: 0;
     width: 100%;
     height: 40px;
+    letter-spacing: 0.05em;
+}
+
+.footer ul{
+    list-style: none; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.footer a{
+    font-style: inherit;
+    text-decoration: none;
+    color:white
 }
