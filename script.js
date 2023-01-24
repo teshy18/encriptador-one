@@ -1,15 +1,22 @@
 
+
 function encriptarTexto(){
     const text = document.getElementById('textarea').value
     const mensajeSalida = document.getElementById('msg')
 
     const textoEncriptado = text.replace(/e/gi, 'enter').replace(/i/gi, 'imes').replace(/a/gi, 'ai').replace(/o/gi, 'ober').replace(/u/gi, 'ufat')
-
+    
 
     if (text.length == 0 ){
+        const divCopiar = document.getElementById('copiar');
+        console.log(divCopiar.classList)
+        divCopiar.classList.add('hidden')
         mensajeSalida.textContent = 'No se encontro ningún un mensaje para encriptar o desencriptar'
     }
     else{
+        const divCopiar = document.getElementById('copiar');
+        console.log(divCopiar.classList)
+        divCopiar.classList.remove('hidden')
         mensajeSalida.textContent = textoEncriptado
     }
     
