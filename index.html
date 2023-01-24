@@ -30,7 +30,7 @@
         <div class="input-box">
             <h2>Ingrese el texto a encriptar:</h2>
             <form action="">
-                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Ingrese el texto que desea encriptar aquí."></textarea>
+                <textarea name="textarea" id="textarea" cols="30"  placeholder="Ingrese el texto que desea encriptar aquí."></textarea>
                 
                 <p> <i class="fa-solid fa-circle-exclamation fa-lg fa-shake"></i> Solo letras mínusculas y sin acentos</p>    
                
@@ -44,8 +44,10 @@
             <div class="msg">
                 <p id="msg">Aún no ha ingresado un mensaje para encriptar.</p>
             </div>
-            <p> <i class="fa-regular fa-copy  fa-beat" style="--fa-animation-duration: 1.5s;"></i> Haz click aqui para copiar el mensaje.</p>
-            <button class="btn" id="copiar"> Copiar </button>
+            <div id="copiar" class="hidden">
+                <p> <i class="fa-regular fa-copy  fa-beat" style="--fa-animation-duration: 1.5s;"></i> Haz click aqui para copiar el mensaje.</p>
+                <button class="btn" id="copiar"> Copiar </button>
+            </div>
         </div>
 
       
